@@ -15,7 +15,7 @@ $items = array(
 			'ford' => 100,
 			'bmw'  => 50,
 			'audi'  => 25
-			);
+		 	);
 
 $item = randomize_weighted($items);
 echo $item;
