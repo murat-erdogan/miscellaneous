@@ -5,11 +5,11 @@
 </script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $.ajax({url:"time.php",success:function(result){
-      $("#div1").html(result);
-    }});
-  });
+	$("button").click(function(){
+		$.ajax({url:"time.php",success:function(result){
+		  $("#div1").html(result);
+		}});
+	});
 });
 </script>
 </head>
