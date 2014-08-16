@@ -24,10 +24,7 @@ function get_tree($arr,$id){
     }
 	return $arr2;
 }
-function test_print($item)
-{
-    echo "$item\n";
-}
+
 echo "<pre>";
 print_r(get_tree($arr,0));
 
