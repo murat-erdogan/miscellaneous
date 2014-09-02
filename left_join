@@ -1,0 +1,7 @@
+SELECT widgets.*, sites.id as sid, publishers.id as pid
+FROM widgets
+LEFT JOIN sites
+ON widgets.site_id=sites.id
+LEFT JOIN publishers
+ON sites.publisher_id=publishers.id
+WHERE widgets.id=36
