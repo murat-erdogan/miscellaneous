@@ -1,0 +1,6 @@
+UPDATE yayincilar
+LEFT JOIN siteler
+ON yayincilar.id = siteler.yayinci_id
+SET 
+siteler.durum = 'Y'
+WHERE yayincilar.id = 1
