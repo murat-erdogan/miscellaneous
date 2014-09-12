@@ -1,0 +1,6 @@
+DELETE
+FROM sites
+USING publishers
+LEFT JOIN sites ON
+publishers.id = sites.yayinci_id
+WHERE publishers.id = 1
