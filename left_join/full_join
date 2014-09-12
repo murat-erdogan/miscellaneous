@@ -1,0 +1,9 @@
+SELECT test1.name, test2.name
+FROM test2
+LEFT JOIN test1
+ON test1.name = test2.name
+UNION
+SELECT test1.name, test2.name
+FROM test2
+RIGHT JOIN test1
+ON test1.name = test2.name
