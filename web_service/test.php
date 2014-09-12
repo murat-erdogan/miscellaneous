@@ -1,20 +1,22 @@
 <?php
-	$post_array['username'] = $_POST['username'];
-	$post_array['password'] = $_POST['password'];
-	$post_array['function'] = $_POST['function'];
-	
-	foreach($post_array as $field => $value) {
-		$elements[] = $field . '=' . $value;
+	if ($_POST) {
+		$post_array=new stdClass();
+		
+		$post_array->username = $_POST['username'];
+		$post_array->password = $_POST['password'];
+		$post_array->function->name = $_POST['function'];
+		$post_array->function->param = '2';
+		
+		$post_data = 'data=' . json_encode($post_array);
+
+		$url = "http://localhost/webservice/index.php";
+		$curl = curl_init($url);
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
+		$data = curl_exec($curl);
+		curl_close($curl);
+		echo $data;
 	}
-	$post_data = join('&', $elements);
-   
-	$url = "http://localhost/webservice/index.php";
-	$curl = curl_init($url);
-	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
-	$data = curl_exec($curl);
-	curl_close($curl);
-	echo $data;
 ?>
 <br><br>
 <form action="" method="POST">
