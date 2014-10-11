@@ -1,4 +1,4 @@
-If you don't set $encoding='utf8' you may have trouble with encodings!
+If you don't set $encoding='utf8' you may have trouble with encoding!
 
 bear in mind that...
 
