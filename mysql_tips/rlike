@@ -1,1 +1,1 @@
-SELECT * FROM data where name rlike '.{1}.{1}da.{1}.{1}er.{1}.{1}.{1}' and length(name)=11
+SELECT * FROM data WHERE name RLIKE '.{1}.{1}da.{1}.{1}er.{1}.{1}.{1}' AND length(name)=11
