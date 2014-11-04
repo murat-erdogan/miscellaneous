@@ -1,0 +1,8 @@
+DELETE FROM ik WHERE id IN (
+SELECT id FROM
+(
+  SELECT id
+  FROM ik
+  GROUP BY i_id, k_id
+  HAVING count(*) > 1
+) AS ids );
