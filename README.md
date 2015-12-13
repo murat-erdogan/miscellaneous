@@ -1,4 +1,4 @@
 miscellaneous
 =============
 
-Various codes which I frequently use.
+Various code which I frequently use.
