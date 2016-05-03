@@ -9,7 +9,6 @@ so I did not bother building tesseract even for shared libraries
 tested on only tesseract 3.0.3
 bear in mind, after cloning repo you may have different version
 and it may need completely different configuration, different api
-and 3.0.4 was not working due to a bug
 """
 
 lang = b"eng"
