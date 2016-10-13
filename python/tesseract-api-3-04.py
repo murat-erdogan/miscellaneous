@@ -38,6 +38,4 @@ success = tesseract.TessBaseAPIProcessPages(api, filename, None , 0, None)
 
 if success:
     text = tesseract.TessBaseAPIGetUTF8Text(api)
-    print("="*78)
     print(text.decode("utf-8").strip())
-    print("="*78)
