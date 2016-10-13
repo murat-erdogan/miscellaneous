@@ -1,3 +1,9 @@
+"""
+This is a workaround kinda solution to segmentation fault appeared in version 3.04.
+It occurs because in version 3.04 C-API is completely changed 
+and demo code in main tesseract repository needs to be updated.
+"""
+
 import os
 from ctypes import *
 
